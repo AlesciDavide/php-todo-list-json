@@ -1,0 +1,52 @@
+[
+    {
+        "task": "Fare la spesa",
+        "description": "Compra frutta, verdura, pane e latte.",
+        "completato": false
+    },
+    {
+        "task": "Allenamento",
+        "description": "Fai una sessione di allenamento di 30 minuti.",
+        "completato": false
+    },
+    {
+        "task": "Leggere un libro",
+        "description": "Leggi almeno un capitolo del libro.",
+        "completato": false
+    },
+    {
+        "task": "Pulizia della casa",
+        "description": "Passa l'aspirapolvere e lava i pavimenti.",
+        "completato": false
+    },
+    {
+        "task": "Scrivere un'email",
+        "description": "Rispondi all'email di lavoro urgente.",
+        "completato": false
+    },
+    {
+        "task": "Pagare le bollette",
+        "description": "Paga le bollette di luce, gas e acqua.",
+        "completato": false
+    },
+    {
+        "task": "Cucinare la cena",
+        "description": "Prepara una cena sana e nutriente.",
+        "completato": false
+    },
+    {
+        "task": "Telefonare ai genitori",
+        "description": "Chiama i genitori per un aggiornamento settimanale.",
+        "completato": false
+    },
+    {
+        "task": "Pianificare la settimana",
+        "description": "Organizza le attivit\u00e0 per la prossima settimana.",
+        "completato": false
+    },
+    {
+        "task": "Meditazione",
+        "description": "Dedica 10 minuti alla meditazione.",
+        "completato": false
+    }
+]

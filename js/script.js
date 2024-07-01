@@ -9,7 +9,7 @@ const { createApp } = Vue
         },
         methods: {
             getApi() {
-                    axios.get('./server.php', {
+                    axios.post('./server.php', {
                         params: {
                         
                         }
