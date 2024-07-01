@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .task{
     max-width: 1400px;
     max-height: 80vh;
@@ -72,6 +71,7 @@ label{
     justify-content: center;
     align-items: center;
 }
+
 .actionTask form label{
     margin-right: .5rem;
 }

@@ -1,4 +1,6 @@
-<?php ?>
+<?php 
+
+?>
 
 
 <!DOCTYPE html>
@@ -14,7 +16,7 @@
 <body>
 <main id="app">
         <section class="task" >
-            <article class="singleTask" v-for="(list, index) in todoList">
+            <article class="singleTask" v-for="(list, index) in todoList" :key="index">
                 <h1>
                     {{ list.task }}
                 </h1>
@@ -24,8 +26,7 @@
                 <span class="actionTask" >
                     <form action="./removeTask.php" method="POST">
                         <label for="delete">Eliminare la task?</label>
-                        <select name="delete" id="delete" hidden>
-                        <option :value="index"></option>
+                        <input type="hidden" name="delete" :value="index">
                         </select>
                         
                         <button class="RemoveButton" type="submit">x</button>
