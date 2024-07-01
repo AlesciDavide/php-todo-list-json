@@ -21,19 +21,35 @@
                 <p>
                     {{ list.description }}
                 </p>
-                <span>
-                    {{ list.completato }}
+                <span class="actionTask" >
+                    <form action="./removeTask.php" method="POST">
+                        <label for="delete">Eliminare la task?</label>
+                        <select name="delete" id="delete">
+                        <option :value="index">yes</option>
+                        <option value="no">no</option>
+                        </select>
+                        <button class="RemoveButton" type="submit">x</button>
+                    </form>
+
                 </span>
             </article>
         </section>
         <section class="sendTask">
-            <form action="./addTask.php" method="POST">
-                <input type="text" name="task" placeholder="task" require>
-                <input type="text" name="description" placeholder="description" require>
-                <input type="text" name="completato" placeholder="completato" require>
-                <?php ?>
-                <button type="submit" require>send</button>
-                <?php ?>
+            <form class="formTask" action="./addTask.php" method="POST">
+                <div>
+                    <label for="task">Inserisci nome della Task (Obbligatorio):</label>
+                    <input type="text" name="task" placeholder="Inserisci nome Task..." >
+                </div>
+                <div>
+                    <label for="description">Inserisci descrizione Task (facoltativo):</label>
+                    <input type="text" name="description" placeholder="Descrizione..." >
+                </div>
+                <div>
+                    <label for="completato">Inserisci se è completato:</label>
+                    <input type="text" name="completato" placeholder="completato" >
+
+                </div>
+                <button class="addTaskButton" type="submit">Send</button>
             </form>
 
         </section>
