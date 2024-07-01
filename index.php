@@ -24,10 +24,10 @@
                 <span class="actionTask" >
                     <form action="./removeTask.php" method="POST">
                         <label for="delete">Eliminare la task?</label>
-                        <select name="delete" id="delete">
-                        <option value="no">no</option>
-                        <option :value="index">yes</option>
+                        <select name="delete" id="delete" hidden>
+                        <option :value="index"></option>
                         </select>
+                        
                         <button class="RemoveButton" type="submit">x</button>
                     </form>
 
