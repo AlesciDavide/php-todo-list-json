@@ -25,8 +25,8 @@
                     <form action="./removeTask.php" method="POST">
                         <label for="delete">Eliminare la task?</label>
                         <select name="delete" id="delete">
-                        <option :value="index">yes</option>
                         <option value="no">no</option>
+                        <option :value="index">yes</option>
                         </select>
                         <button class="RemoveButton" type="submit">x</button>
                     </form>
