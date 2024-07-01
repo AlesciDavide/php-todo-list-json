@@ -15,7 +15,7 @@ if(isset($_POST['task']) && isset($_POST['description']) && isset($_POST['comple
     $jsonData = json_encode($data);
 
     file_put_contents("./db/todoListAdditions.json", $jsonData);
-
+    
     header("location: ./index.php");
 }else{
     http_response_code(404);

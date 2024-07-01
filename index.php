@@ -1,7 +1,4 @@
-<?php
-
-
-?>
+<?php ?>
 
 
 <!DOCTYPE html>
@@ -17,7 +14,7 @@
 <body>
 <main id="app">
         <section class="task" >
-            <article class="singleTask" v-for="list in todoList">
+            <article class="singleTask" v-for="(list, index) in todoList">
                 <h1>
                     {{ list.task }}
                 </h1>
@@ -29,13 +26,17 @@
                 </span>
             </article>
         </section>
-    <form action="./addTask.php" method="POST">
-        <input type="text" name="task" placeholder="task">
-        <input type="text" name="description" placeholder="description">
-        <input type="text" name="completato" placeholder="completato">
+        <section class="sendTask">
+            <form action="./addTask.php" method="POST">
+                <input type="text" name="task" placeholder="task" require>
+                <input type="text" name="description" placeholder="description" require>
+                <input type="text" name="completato" placeholder="completato" require>
+                <?php ?>
+                <button type="submit" require>send</button>
+                <?php ?>
+            </form>
 
-        <button type="submit">send</button>
-    </form>
+        </section>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

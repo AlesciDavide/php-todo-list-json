@@ -48,5 +48,10 @@
         "task": "Meditazione",
         "description": "Dedica 10 minuti alla meditazione.",
         "completato": false
+    },
+    {
+        "task": "davide",
+        "description": "sercizio",
+        "completato": "false"
     }
 ]
